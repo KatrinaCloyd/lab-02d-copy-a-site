@@ -1,0 +1,101 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.containter {
+    display: grid;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 300px, auto, 300px;
+}
+
+.header-left{
+    display:inline;
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+.header-img{
+    height: 65px;
+    grid-column: 2 / 3;
+    padding: 20px;
+    justify-self: center;
+}
+
+.header-right{
+    display:inline;
+    grid-column: 3 / 4;
+    justify-self: center;
+    align-content: center;
+
+}
+
+.header-item{
+    display:inline-block;
+    padding: 5px;
+    align-items: center;
+}
+
+.welcome-pic{
+    color: white;
+    height: 800px;
+    background-image: url(house.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-pic h1{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 55px;
+    margin: 100px 0px 0px 0px;
+}
+
+.welcome-pic h3{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+input{   
+    display: flex;
+    width: 400px; 
+    height: 45px;
+    color: gray;
+    padding: 10px; 
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 40px;
+}
+
+.buy-sell-rent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+.box {
+    padding: 10px;
+    width: 350px; 
+    height: 450px;
+    margin: 15px;
+    box-shadow: rgb(209, 209, 213) 0px 5px 10px;
+}
